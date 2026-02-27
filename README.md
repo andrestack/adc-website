@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡️ OpenCode Modern Boilerplate
 
-## Getting Started
+A professional, AI-ready web development boilerplate built with the latest technologies. Designed for high performance, smooth animations, and rapid development cycles.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Framework:** [Next.js 15+ (App Router)](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Components:** [Radix UI](https://www.radix-ui.com/) + Shadcn/ui
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Optimization:** Next/Image & Next/Font
+
+## 📁 Project Structure
+
+```text
+├── app/               # App Router: Pages, layouts, and global styles
+├── ai-agents/         # AI-first documentation & instruction sets
+├── components/        # Reusable UI components (React)
+├── lib/               # Shared utilities, hooks, and constants
+├── public/            # Static assets (images, fonts, SVGs)
+└── next.config.ts     # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Key Directories
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **`app/`**: Contains the core routing logic. `page.tsx` is your entry point, and `layout.tsx` manages the root structure and metadata.
+- **`components/`**: Modularized UI elements. Follows a "shadcn-inspired" architecture for maximum customizability.
+- **`ai-agents/`**: **The Brain**. This folder contains detailed instruction sets (`instructions.md`), design systems (`design-Instructions.md`), and state tracking (`AGENTS.md`) for AI coding assistants. This ensures consistent development when using tools like Antigravity, Cursor, or Copilot.
+- **`lib/`**: Contains shared logic like the `cn` utility for Tailwind class merging.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤖 AI-Ready Workflow
 
-## Learn More
+This boilerplate is specifically optimized for AI-driven development.
+1. **Context First**: Always point your AI agent to the `ai-agents/` folder.
+2. **Design Alignment**: Use `design-Instructions.md` to ensure the AI adheres to the brand's color palette, typography, and motion system.
+3. **Persistent State**: The `AGENTS.md` file tracks progress and architectural decisions across sessions.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Branding & Design for this beautiful project
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ADC is all about gathering, drumming, dancing and connecting through the passion for West African culture.
 
-## Deploy on Vercel
+This boilerplate ships with a modern, high-contrast design system:
+- **Primary Colors**: Charcoal (#121212), White (#FFFFFF), and Lime (#C4D656).
+- **Typography**: Gardaempty (Display) and Inter (Body).
+- **Motion**: Signature "Drum Pulse" reveal animations.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created with ❤️ for high-performance web projects.*
