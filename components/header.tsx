@@ -3,18 +3,30 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
 
 const navLinks = [
-  { href: "#workshops", label: "Workshops" },
-  { href: "#teachers", label: "Teachers" },
-  { href: "#accommodation", label: "Alojamento" },
-  { href: "#testimonials", label: "Testemunhos" },
-  { href: "#location", label: "Localização" },
+  { href: "#workshops", key: "workshops" },
+  { href: "#teachers", key: "teachers" },
+  { href: "#accommodation", key: "accommodation" },
+  { href: "#testimonials", key: "testimonials" },
+  { href: "#location", key: "location" },
 ];
 
 export function Header() {
+  const t = useTranslations("Header");
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleLocale = () => {
+    const nextLocale = locale === "en" ? "pt" : "en";
+    const newPath = pathname.replace(`/${locale}`, `/${nextLocale}`);
+    router.push(newPath || `/${nextLocale}`);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,9 +63,26 @@ export function Header() {
                 href={link.href}
                 className="text-xs uppercase tracking-[0.25em] text-charcoal hover:text-lime transition-colors duration-300"
               >
-                {link.label}
+                {t(link.key)}
               </Link>
             ))}
+            
+            {/* Language Switcher */}
+            <div className="flex items-center gap-2 border-l border-charcoal/10 pl-8">
+              <button
+                onClick={() => locale !== 'pt' && toggleLocale()}
+                className={`text-[10px] tracking-widest transition-colors ${locale === 'pt' ? 'text-lime' : 'text-charcoal/40 hover:text-charcoal'}`}
+              >
+                PT
+              </button>
+              <span className="text-charcoal/10 text-[10px]">/</span>
+              <button
+                onClick={() => locale !== 'en' && toggleLocale()}
+                className={`text-[10px] tracking-widest transition-colors ${locale === 'en' ? 'text-lime' : 'text-charcoal/40 hover:text-charcoal'}`}
+              >
+                EN
+              </button>
+            </div>
           </div>
 
           {/* CTA Button */}
@@ -62,7 +91,7 @@ export function Header() {
               href="#register"
               className="inline-flex items-center justify-center px-6 py-3 text-xs uppercase tracking-[0.25em] bg-lime text-charcoal rounded-full hover:bg-charcoal hover:text-white transition-colors duration-300"
             >
-              Inscreve-te
+              {t("register")}
             </Link>
           </div>
 
@@ -87,15 +116,26 @@ export function Header() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-xs uppercase tracking-[0.25em] text-charcoal hover:text-lime transition-colors duration-300 py-2"
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               ))}
+              
+              {/* Mobile Language Switcher */}
+              <div className="flex items-center gap-4 py-2 border-t border-charcoal/5 mt-2">
+                <button
+                  onClick={toggleLocale}
+                  className="text-[10px] tracking-widest text-charcoal flex items-center gap-2"
+                >
+                  LANGUAGE: <span className="text-lime">{locale.toUpperCase()}</span>
+                </button>
+              </div>
+
               <Link
                 href="#register"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="inline-flex items-center justify-center px-6 py-3 text-xs uppercase tracking-[0.25em] bg-lime text-charcoal rounded-full hover:bg-charcoal hover:text-white transition-colors duration-300 mt-2"
               >
-                Inscreve-te
+                {t("register")}
               </Link>
             </div>
           </div>

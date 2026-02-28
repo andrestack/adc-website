@@ -1,0 +1,41 @@
+{
+  "Header": {
+    "workshops": "Workshops",
+    "teachers": "Professores",
+    "accommodation": "Alojamento",
+    "testimonials": "Testemunhos",
+    "location": "Localização",
+    "register": "Inscreve-te"
+  },
+  "Hero": {
+    "dates": "15 — 22 Agosto 2026",
+    "year": "2026",
+    "title1": "DJEMBE",
+    "title2": "CAMP",
+    "subtitle": "Um retiro de verão onde o ritmo encontra a natureza.",
+    "subtitle2": "Uma semana para desconectar, dançar, tocar e pertencer.",
+    "dateLabel": "Data",
+    "locationLabel": "Local",
+    "locationValue": "Aldeia, Portugal"
+  },
+  "Workshops": {
+    "title": "WORKSHOPS",
+    "items": {
+      "djembe": {
+        "title": "Djembe",
+        "description": "Aprende os ritmos tradicionais da África Ocidental. Desde os padrões básicos até às técnicas avançadas de solo.",
+        "level": "Todos os níveis"
+      },
+      "dance": {
+        "title": "Dança",
+        "description": "Movimento que conta histórias. Dança tradicional guineense para todos os corpos e ritmos.",
+        "level": "Todos os níveis"
+      },
+      "balafon": {
+        "title": "Balafon",
+        "description": "O piano de madeira da África. Uma introdução ao instrumento ancestral com o mestre Famoudou.",
+        "level": "Iniciante / Intermédio"
+      }
+    }
+  }
+}

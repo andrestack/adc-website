@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const easing: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -39,15 +40,17 @@ function AnimatedText({ text, className }: { text: string; className?: string })
 }
 
 export function Hero() {
+  const t = useTranslations("Hero");
+
   return (
     <section className="min-h-screen bg-white pt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32">
         {/* Main Hero Text */}
         <div className="flex flex-col items-center justify-center text-center mb-20 lg:mb-32">
           <h1 className="font-display text-[15vw] lg:text-[18vw] leading-[0.85] tracking-[-0.01em] uppercase text-charcoal">
-            <AnimatedText text="DJEMBE" />
+            <AnimatedText text={t("title1")} />
             <br />
-            <AnimatedText text="CAMP" />
+            <AnimatedText text={t("title2")} />
           </h1>
         </div>
 
@@ -61,10 +64,10 @@ export function Hero() {
           {/* Left: Poetic Intro */}
           <div>
             <p className="text-lg lg:text-xl leading-relaxed text-charcoal/80 max-w-md">
-              Um retiro de verão onde o ritmo encontra a natureza.
+              {t("subtitle")}
               <br />
               <br />
-              Uma semana para desconectar, dançar, tocar e pertencer.
+              {t("subtitle2")}
             </p>
           </div>
 
@@ -72,18 +75,18 @@ export function Hero() {
           <div className="flex flex-col gap-6">
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-charcoal/60 mb-2">
-                Data
+                {t("dateLabel")}
               </p>
               <p className="text-2xl lg:text-3xl font-display uppercase text-charcoal">
-                15 — 22 Agosto 2026
+                {t("dates")}
               </p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.25em] text-charcoal/60 mb-2">
-                Local
+                {t("locationLabel")}
               </p>
               <p className="text-2xl lg:text-3xl font-display uppercase text-charcoal">
-                Aldeia, Portugal
+                {t("locationValue")}
               </p>
             </div>
           </div>

@@ -149,10 +149,14 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
   
   /* Display font fallback - use system sans-serif until Gardaempty is available */
   .font-display {
-    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    font-family: var(--font-gardaempty), Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
   }

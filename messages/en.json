@@ -1,0 +1,41 @@
+{
+  "Header": {
+    "workshops": "Workshops",
+    "teachers": "Teachers",
+    "accommodation": "Accommodation",
+    "testimonials": "Testimonials",
+    "location": "Location",
+    "register": "Sign Up"
+  },
+  "Hero": {
+    "dates": "August 15 — 22, 2026",
+    "year": "2026",
+    "title1": "DJEMBE",
+    "title2": "CAMP",
+    "subtitle": "A summer retreat where rhythm meets nature.",
+    "subtitle2": "A week to disconnect, dance, play and belong.",
+    "dateLabel": "Date",
+    "locationLabel": "Location",
+    "locationValue": "Aldeia, Portugal"
+  },
+  "Workshops": {
+    "title": "WORKSHOPS",
+    "items": {
+      "djembe": {
+        "title": "Djembe",
+        "description": "Learn traditional West African rhythms. From basic patterns to advanced solo techniques.",
+        "level": "All levels"
+      },
+      "dance": {
+        "title": "Dance",
+        "description": "Movement that tells stories. Traditional Guinean dance for all bodies and rhythms.",
+        "level": "All levels"
+      },
+      "balafon": {
+        "title": "Balafon",
+        "description": "The wooden piano of Africa. An introduction to the ancestral instrument with master Famoudou.",
+        "level": "Beginner / Intermediate"
+      }
+    }
+  }
+}
