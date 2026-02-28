@@ -2,40 +2,103 @@
   "Header": {
     "workshops": "Workshops",
     "teachers": "Professores",
-    "accommodation": "Alojamento",
+    "accommodation": "Lazer",
     "testimonials": "Testemunhos",
-    "location": "Localização",
-    "register": "Inscreve-te"
+    "location": "Local",
+    "register": "Inscrições"
   },
   "Hero": {
-    "dates": "15 — 22 Agosto 2026",
-    "year": "2026",
+    "dates": "2 - 7 Setembro 2025",
+    "year": "2025",
     "title1": "DJEMBE",
     "title2": "CAMP",
-    "subtitle": "Um retiro de verão onde o ritmo encontra a natureza.",
-    "subtitle2": "Uma semana para desconectar, dançar, tocar e pertencer.",
-    "dateLabel": "Data",
-    "locationLabel": "Local",
-    "locationValue": "Aldeia, Portugal"
+    "subtitle": "No coração de Portugal, a primeira semana de Setembro é recheada de workshops",
+    "subtitle2": "Dedicados à Música e à Dança da Costa Ocidental Africana.",
+    "dateLabel": "Datas",
+    "locationLabel": "Onde",
+    "locationValue": "Proença-a-Nova"
   },
   "Workshops": {
-    "title": "WORKSHOPS",
+    "title": "WORKSHOPS 2025",
     "items": {
       "djembe": {
         "title": "Djembe",
-        "description": "Aprende os ritmos tradicionais da África Ocidental. Desde os padrões básicos até às técnicas avançadas de solo.",
-        "level": "Todos os níveis"
+        "description": "9 horas de formação. De Intermédios a Masterclass, leccionadas por alguns dos mais promissores Djembefolas.",
+        "level": "Intermédio / Avançado"
       },
       "dance": {
         "title": "Dança",
-        "description": "Movimento que conta histórias. Dança tradicional guineense para todos os corpos e ritmos.",
-        "level": "Todos os níveis"
+        "description": "12 horas de formação. Nível aberto. Danças do Oeste Africano e não só!",
+        "level": "Nível Aberto"
       },
       "balafon": {
         "title": "Balafon",
-        "description": "O piano de madeira da África. Uma introdução ao instrumento ancestral com o mestre Famoudou.",
-        "level": "Iniciante / Intermédio"
+        "description": "6 horas de formação. Dois níveis: iniciados e intermédio/avançado.",
+        "level": "Iniciados / Intermédio"
       }
     }
+  },
+  "Teachers": {
+    "title": "MÚSICOS CONVIDADOS",
+    "items": [
+      { "name": "Sana Camara", "role": "Djembe" },
+      { "name": "Marisa Paulo", "role": "Dança" },
+      { "name": "Alya Makiti", "role": "Dança" },
+      { "name": "Jorge Vera", "role": "Djembe, Dununs" },
+      { "name": "Sérgio Cardoso", "role": "Kora, Balafon" },
+      { "name": "Fidel Márquez Bernal", "role": "Djembe, Dununs, Balafon" },
+      { "name": "Moussa Oularé", "role": "Djembe" },
+      { "name": "Gueladjo Sané", "role": "Dança" }
+    ]
+  },
+  "Accommodation": {
+    "title": "ALOJAMENTO",
+    "items": [
+      {
+        "title": "Bungalows",
+        "description": "Os bungalows da Aldeia Ruiva possuem 1 quarto familiar, casa-de-banho e cozinha equipada.",
+        "subtitle": "Esgotado"
+      },
+      {
+        "title": "Campismo",
+        "description": "Amplo espaço com árvores para montar tendas e área reservada a carrinhas.",
+        "subtitle": "Livre Trânsito"
+      }
+    ],
+    "foodTitle": "ALIMENTAÇÃO",
+    "foodDesc": "3 refeições completas por dia, com opção vegetariana sempre disponível."
+  },
+  "Testimonials": {
+    "title": "A NOSSA ALDEIA",
+    "items": [
+      {
+        "text": "A minha estreia não podia ter sido melhor!! Foi maravilhoso, conheci pessoas incríveis...",
+        "author": "Michele C."
+      },
+      {
+        "text": "Gracias amigos por este gran regalo que nos habéis hecho. Organización y maestros maravillosos...",
+        "author": "Susi A."
+      },
+      {
+        "text": "Obrigado, gracias, merci, inuwali, anitche!! ADC family sois increíbles!",
+        "author": "Miguel R."
+      }
+    ]
+  },
+  "Location": {
+    "title": "COMO CHEGAR",
+    "park": "Parque de Campismo da Aldeia Ruiva",
+    "city": "Proença-a-Nova, Portugal",
+    "car": "De carro via IC8 (saída em Isna de S. Carlos)",
+    "bus": "De autocarro com a Rede Expressos até à Sertã",
+    "taxi": "De táxi: Sertã - Aldeia Ruiva (10 minutos)"
+  },
+  "CTA": {
+    "title": "PERGUNTAS?",
+    "button": "Inscreve-te",
+    "desc": "Nós temos respostas. Informações sobre preços podem encontrar no formulário de inscrição."
+  },
+  "Footer": {
+    "copy": "© 2024 website doado por hinterland web"
   }
 }

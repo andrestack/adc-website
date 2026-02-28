@@ -2,40 +2,103 @@
   "Header": {
     "workshops": "Workshops",
     "teachers": "Teachers",
-    "accommodation": "Accommodation",
+    "accommodation": "Lifestyle",
     "testimonials": "Testimonials",
     "location": "Location",
     "register": "Sign Up"
   },
   "Hero": {
-    "dates": "August 15 — 22, 2026",
-    "year": "2026",
+    "dates": "September 2 - 7, 2025",
+    "year": "2025",
     "title1": "DJEMBE",
     "title2": "CAMP",
-    "subtitle": "A summer retreat where rhythm meets nature.",
-    "subtitle2": "A week to disconnect, dance, play and belong.",
-    "dateLabel": "Date",
-    "locationLabel": "Location",
-    "locationValue": "Aldeia, Portugal"
+    "subtitle": "A week full of workshops dedicated to West African music and dance",
+    "subtitle2": "delicious food and lots of activities in the idyllic nature.",
+    "dateLabel": "Dates",
+    "locationLabel": "Where",
+    "locationValue": "Proença-a-Nova"
   },
   "Workshops": {
-    "title": "WORKSHOPS",
+    "title": "WORKSHOPS 2025",
     "items": {
       "djembe": {
         "title": "Djembe",
-        "description": "Learn traditional West African rhythms. From basic patterns to advanced solo techniques.",
-        "level": "All levels"
+        "description": "9 hours of training. From Intermediate to Masterclass, taught by amazing Djembefolas.",
+        "level": "Intermediate / Advanced"
       },
       "dance": {
         "title": "Dance",
-        "description": "Movement that tells stories. Traditional Guinean dance for all bodies and rhythms.",
-        "level": "All levels"
+        "description": "12 hours of training. Open level. West African dance and beyond!",
+        "level": "Open Level"
       },
       "balafon": {
         "title": "Balafon",
-        "description": "The wooden piano of Africa. An introduction to the ancestral instrument with master Famoudou.",
+        "description": "6 hours of training. Two levels: beginners and intermediate/advanced.",
         "level": "Beginner / Intermediate"
       }
     }
+  },
+  "Teachers": {
+    "title": "GUEST MUSICIANS",
+    "items": [
+      { "name": "Sana Camara", "role": "Djembe" },
+      { "name": "Marisa Paulo", "role": "Dance" },
+      { "name": "Alya Makiti", "role": "Dance" },
+      { "name": "Jorge Vera", "role": "Djembe, Dununs" },
+      { "name": "Sérgio Cardoso", "role": "Kora, Balafon" },
+      { "name": "Fidel Márquez Bernal", "role": "Djembe, Dununs, Balafon" },
+      { "name": "Moussa Oularé", "role": "Djembe" },
+      { "name": "Gueladjo Sané", "role": "Dance" }
+    ]
+  },
+  "Accommodation": {
+    "title": "ACCOMMODATION",
+    "items": [
+      {
+        "title": "Bungalows",
+        "description": "The bungalows have 1 family room, a bathroom and an equipped kitchen.",
+        "subtitle": "Sold Out"
+      },
+      {
+        "title": "Camping",
+        "description": "Ample space with trees to set up tents and an area reserved for vans.",
+        "subtitle": "Free Pass"
+      }
+    ],
+    "foodTitle": "FOOD",
+    "foodDesc": "Our kitchen prepares three meals a day, with a vegetarian option always available."
+  },
+  "Testimonials": {
+    "title": "OUR COMMUNITY",
+    "items": [
+      {
+        "text": "My debut couldn't have been better! It was wonderful...",
+        "author": "Michele C."
+      },
+      {
+        "text": "Wonderful organization and teachers, delicious food, great family of friends...",
+        "author": "Susi A."
+      },
+      {
+        "text": "Obrigado, gracias, merci, inuwali, anitche!!! ADC family you guys are awesome!",
+        "author": "Miguel R."
+      }
+    ]
+  },
+  "Location": {
+    "title": "HOW TO GET THERE",
+    "park": "Parque de Campismo de Aldeia Ruiva",
+    "city": "Proença-a-Nova, Portugal",
+    "car": "By car via IC8 (exit at Isna de S. Carlos)",
+    "bus": "By bus with Rede Expressos to Sertã",
+    "taxi": "By taxi: Sertã - Aldeia Ruiva (10 minutes)"
+  },
+  "CTA": {
+    "title": "QUESTIONS?",
+    "button": "Sign Up",
+    "desc": "We have answers. Information about prices can be found on the registration form."
+  },
+  "Footer": {
+    "copy": "© 2024 website donated by hinterland web"
   }
 }
